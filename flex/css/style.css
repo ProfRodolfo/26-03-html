@@ -31,18 +31,57 @@
 .end .box {
     width: 50px;
 }
-
 .center{
     justify-content: center;
 }
-
 .space-around{
     justify-content: space-around;
 }
-
 .space-between{
     justify-content: space-between;
 }
 .end{
     justify-content: end;
+}
+
+.align-center,
+.align-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+
+.align-center .box,
+.align-end .box,
+.stretch .box {
+    width: 50px;
+}
+
+.align-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.align-end{
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.stretch .box {
+    height: auto;
+}
+
+.gap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid violet;
+    gap: 10px;
+    padding: 10px;
+}
+.gap .box {
+    width: 32%;
 }
